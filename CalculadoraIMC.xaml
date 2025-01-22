@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2_HACB.CalculadoraIMC"
+             Title="CalculadoraIMC">
+
+    <StackLayout>
+        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
+            <Label Text="CalculadoraIMC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry Placeholder="Peso" x:Name="Peso" Keyboard="Numeric"/>
+        <Entry Placeholder="Altura" x:Name="Altura" Keyboard="Numeric"/>
+        <Entry Placeholder="IMC" x:Name="IMC" IsEnabled="False"/>
+        <Button Text="Calcular" Clicked="Calcular_Clicked"/>
+        <Button Text="MainPage" x:Name="mainPage" Clicked="mainPage_Clicked"/>
+        <Image Source="https://i.ibb.co/R6XRyS6/sticker-png-green-circle-gardevoir-drawing-gallade-fan-art-comics-cuteness-video-thumbnail.png" x:Name="BajoPeso" IsVisible="False"/>
+        <Image Source="https://i.ibb.co/YkKYVK4/9cd071c09b495fe235e2c7494aaa5d08.jpg" x:Name="PesoNormal" IsVisible="False" />
+        <Image Source="https://i.ibb.co/LR1B4NM/Venusaur.jpg" x:Name="SobrePeso" IsVisible="False" />
+        <Image Source="https://i.ibb.co/SwkmRL1/image.jpg" x:Name="Obesidad" IsVisible="False" />
+    </StackLayout>
+</ContentPage>

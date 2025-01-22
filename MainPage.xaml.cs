@@ -25,6 +25,16 @@
             }
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private void ir_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NewPage1());
+        }
+
+        private void CalculadoraIMC_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CalculadoraIMC());
+        }
     }
 
 }

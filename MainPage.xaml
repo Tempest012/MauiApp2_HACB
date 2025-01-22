@@ -32,6 +32,15 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="ir"
+                Text="ir" 
+                Clicked="ir_Clicked"
+                 />
+            <Button x:Name="CalculadoraIMC"
+                    Text="Calculadora IMC"
+                    Clicked="CalculadoraIMC_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 
